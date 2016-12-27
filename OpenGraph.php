@@ -99,6 +99,7 @@ class OpenGraph implements Iterator
 			if ($tag->hasAttribute('property') &&
 			    strpos($tag->getAttribute('property'), 'og:') === 0) {
 				$key = strtr(substr($tag->getAttribute('property'), 3), '-', '_');
+				$key = strtr(substr($tag->getAttribute('property'), 3), ':', '_');
 				
 				/* Check if a value has already been saved under the key.
 				 * 	If the key is set and does not contain an array, we will convert the value into an array.
