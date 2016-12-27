@@ -3,7 +3,7 @@
 A small library for making accessing of Open Graph Protocol data easier
 
 ## Note
-Keys with a dash (-) in the name are converted to _ for easy access as a property
+Keys with a dash (-) or color (:) in the name are converted to _ for easy access as a property
 in PHP
 
 Any time a key is used more than once, it will be converted into an array containing all of the values present.
